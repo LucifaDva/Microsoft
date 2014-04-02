@@ -1,3 +1,6 @@
+/*
+题目：输入一个单向链表，输出该链表中倒数第k个结点。链表的倒数第0个结点为链表的尾指针。
+*/
 #include <iostream>
 #include <cstdlib>
 #include <cassert>
