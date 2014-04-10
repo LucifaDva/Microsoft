@@ -10,6 +10,7 @@ int Pair_sum(int* A,int key,int len){
   cout<<len<<"****"<<endl;
   int start = 0;
   int end = len-1;
+  //n表示两个数字的和等于指定key的对数
   int n = 0;
   while(start<end){
     if(A[start]+A[end]<key){
