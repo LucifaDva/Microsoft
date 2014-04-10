@@ -48,6 +48,7 @@ int main(){
   int A[]={4,1,3,2,16,9,10,14,8,7};
   int len = sizeof(A)/sizeof(A[0]);
   int k = 4;
+  //如果K大于数组长度，直接输出原数组即可
   if(k>=len){
     for(int i=0;i<len;i++)
       cout<<A[i]<<"-->";

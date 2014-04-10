@@ -58,7 +58,17 @@ void quick_sort(int* A,int p,int r,int k){
 
   }
 }
+void min_k(int* A,int start,int end,int k){
+  if(end-start+1<=k){
+    cout<<"最小K个数即为原来A[]全部元素"<<endl;
+    return;
+  }else{
+    quick_sort(A,start,end,k);
+  }
+}
 int main(){
   int A[] = {7,8,1,4,2,3,5,6};
-  quick_sort(A,0,4,4);
+  int len = sizeof(A)/sizeof(A[0]);
+  min_k(A,0,len-1,9);
+  return 0;
 }
