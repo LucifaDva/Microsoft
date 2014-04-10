@@ -19,7 +19,9 @@ bool verifySequenceOfBST(int* sequence,int length){
   if(sequence==NULL || length<=0){
     return false;
   }
+  //后序，跟在最后一个位置
   int root = sequence[length-1];
+  //寻找左子树位置
   int i=0;
   for(;i<length-1;++i){
     if(sequence[i]>root){
