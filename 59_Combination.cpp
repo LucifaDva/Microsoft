@@ -8,7 +8,7 @@ void Combine(char* string){
     return;
   int len = strlen(string);
   vector<char> result;
-  for(int i=1;i<=len;++i){
+  for(int i=1;i<=3;++i){
     Combination(string,i,result);
   }
 }
@@ -28,7 +28,7 @@ void Combination(char* string,int number,vector<char>& result){
   Combination(string+1,number,result);
 }
 int main(){
-  char s[] = {'a','b','c'};
+  char s[] = {'0','1','2','3','4','5','6','7','8','9','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
   Combine(s);
   return 0;
 }
